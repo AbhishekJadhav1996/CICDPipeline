@@ -5,6 +5,7 @@ pipeline {
   
     stage("build") {
     steps {
+        git 'https://github.com/AbhishekJadhav1996/CICDPipeline.git'  
         echo 'building the application..'
     }
   }
