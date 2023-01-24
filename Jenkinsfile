@@ -3,7 +3,8 @@ pipeline{
     tools{
         maven "Maven"
         jdk "JDK11"
-    }          stages {
+    }         
+    stages {
         stage('Initialize'){
             steps{
                 echo "PATH = ${M2_HOME}/bin:${PATH}"
