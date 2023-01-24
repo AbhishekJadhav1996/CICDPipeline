@@ -11,12 +11,14 @@ pipeline{
                 echo "M2_HOME = /opt/maven"
             }
         }
+        
         stage('Compile'){
             steps{
                 echo "COMPILE"
              bat "mvn clean install"
             }
         }
+        
         stage('Sonar Analysis') {
             steps {
                 // use the SonarQube Scanner to analyze the project
@@ -24,6 +26,7 @@ pipeline{
                     bat 'mvn sonar:sonar'
                 }
             }
+        }
         
         stage('Upload_Artifact'){
             steps{
