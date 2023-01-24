@@ -24,13 +24,12 @@ pipeline{
                     bat 'mvn sonar:sonar'
                 }
             }
-        }
         
         stage('Upload_Artifact') {
             steps {
                 script{
                def server = Artifactory.server 'artifactory'                
-                 def uploadSpec = """{
+               def uploadSpec = """{
                   "files": [
                     {
                       "pattern": "target/*.jar",
