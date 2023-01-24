@@ -39,7 +39,7 @@ pipeline {
     agent any
     tools {
         maven "Maven"
-        jdk "Jdk"
+        jdk "JDK11"
     }          stages {
 //         stage('Checkout') {
 //             steps {
