@@ -35,12 +35,12 @@
 
 
 
-pipeline {
+pipeline{
     agent any
-    tools {
+    tools{
         maven "Maven"
         jdk "JDK11"
-    }          stages {
+    }        //  stages {
 //         stage('Checkout') {
 //             steps {
 //                 // Get some code from a GitHub repository
