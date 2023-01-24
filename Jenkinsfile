@@ -37,7 +37,7 @@ pipeline{
                     {
                     "pattern": "target/*.jar",
                     "target": "CI_POC/"
-                    }
+                    }
                     ]
                     }"""
                     server.upload(uploadSpec)
